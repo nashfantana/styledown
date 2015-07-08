@@ -6,11 +6,11 @@
     "css",
     "styleguide"
   ],
-  "author": "Rico Sta. Cruz <hi@ricostacruz.com>",
+  "author": "Steven Doyle",
   "version": "1.0.2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/styledown/styledown.git"
+    "url": "https://github.com/nashfantana/styledown.git"
   },
   "main": "index",
   "scripts": {
