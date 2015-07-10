@@ -128,10 +128,10 @@ Styledown.defaultOptions = {
   inline: false,
 
   /* Things to put into `body` */
-  body: "<div sg-content></div>",
+  body: "<div docs-content></div>",
 
   /* Prefix for classnames */
-  prefix: 'sg',
+  prefix: 'docs',
 
   /* Indentation spaces */
   indentSize: 2
@@ -154,14 +154,14 @@ Styledown.prototype = {
       // Unpack template
       var $ = Cheerio.load(htmlize(this.options.template));
       $('body').append(htmlize(this.options.body));
-      $('[sg-content]').append(html).removeAttr('sg-content');
+      $('[docs-content]').append(html).removeAttr('docs-content');
       $('html, body').addClass(this.options.prefix);
       $('head').append(htmlize(this.options.head));
 
       html = $.html();
     }
 
-    html = this.prettyprint(html, { wrap_line_length: 0 });
+    // html = this.prettyprint(html, { wrap_line_length: 0 });
     return html;
   },
 
